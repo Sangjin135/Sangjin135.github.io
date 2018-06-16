@@ -1,55 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2016 Average Personal Savings Rate</title>
   <!-- Plotly.js -->
-          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-          </head>
-          <body>
-          <!-- Plotly chart will be drawn inside this DIV -->
-          <div id="myDiv"></div>
-          <script>
-          Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
-      function unpack(rows, key) {
-          return rows.map(function(row) { return row[key]; });
-      }
-  
- var data = [{
-              type: 'choropleth',
-              locationmode: 'USA-states',
-              locations: unpack(rows, 'code'),
-              z: unpack(rows, 'total exports'),
-              text: unpack(rows, 'state'),
-              zmin: 0,
-              zmax: 17000,
-              colorscale: 'RdBu',
-            colorbar: {
-              title: 'USD',
-              thickness: 0.2
-            },
-            marker: {
-              line:{
-                color: 'rgb(0,0,0)',
-                width: 2
-              }
-            }
-          }];
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<!-- Plotly chart will be drawn inside this DIV -->
+<div id="myDiv"></div>
+<script>
+Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
+function unpack(rows, key) {
+return rows.map(function(row) { return row[key]; });
+}
+
+var data = [{
+    type: 'choropleth',
+    locationmode: 'USA-states',
+    locations: unpack(rows, 'code'),
+    z: unpack(rows, 'total exports'),
+    text: unpack(rows, 'state'),
+    zmin: 0,
+    zmax: 17000,
+    colorscale: 'RdBu',
+  colorbar: {
+    title: 'USD',
+    thickness: 0.2
+  },
+  marker: {
+    line:{
+      color: 'rgb(0,0,0)',
+      width: 2
+    }
+  }
+}];
 
 console.log(data.locations);
-data.then(gd => {
-  gd.on('plotly_click', console.log)
-})
-
-
-
-
 
 var layout = {
-          title: '2016 Average Personal Savings Rate',
-          geo:{
-            scope: 'usa',
-            showlakes: true,
-            lakecolor: 'rgb(255,255,255)'
-          }
-      };
-      Plotly.plot(myDiv, data, layout, {showLink: false});
-  });
-          </script>
-          </body>
+title: '2016 Difference Between Income and Expenditures',
+geo:{
+  scope: 'usa',
+  showlakes: true,
+  lakecolor: 'rgb(255,255,255)'
+}
+};
+Plotly.plot(myDiv, data, layout, {showLink: false});
+});
+</script>
+</body>
+</html>
