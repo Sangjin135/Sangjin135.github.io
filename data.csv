@@ -1,50 +1,52 @@
 ,Unnamed: 0,CL_UNIT,Code,DataValue,GeoName,state,2016,difference
-0,71,dollars,AL,35174,Alabama,state,152397,117223
-1,211,dollars,AZ,36426,Arizona,state,239680,203254
-2,348,dollars,AR,35847,Arkansas,state,92984,57137
 3,351,dollars,CA,48209,California,state,1641724,1593515
-4,488,dollars,CO,45503,Colorado,state,236296,190793
-5,491,dollars,CT,58282,Connecticut,state,173447,115165
-6,628,dollars,DE,42470,Delaware,state,40813,-1657
-7,631,dollars,DC,64273,District of Columbia,state,38720,-25553
-8,768,dollars,FL,40767,Florida,state,796537,755770
-9,771,dollars,GA,37375,Georgia,state,357332,319957
-10,911,dollars,ID,35555,Idaho,state,56642,21087
-11,1048,dollars,IL,45051,Illinois,state,534750,489699
-12,1051,dollars,IN,38614,Indiana,state,236353,197739
-13,1188,dollars,IA,41102,Iowa,state,115999,74897
-14,1191,dollars,KS,42372,Kansas,state,104615,62243
-15,1328,dollars,KY,34708,Kentucky,state,147697,112989
-16,1331,dollars,LA,38461,Louisiana,state,160025,121564
-17,1468,dollars,ME,39482,Maine,state,57281,17799
-18,1471,dollars,MD,50131,Maryland,state,269223,219092
-19,1608,dollars,MA,54095,Massachusetts,state,354085,299990
-20,1611,dollars,MI,39170,Michigan,state,390497,351327
-21,1748,dollars,MN,44704,Minnesota,state,242489,197785
-22,1751,dollars,MS,32567,Mississippi,state,90261,57694
-23,1888,dollars,MO,38093,Missouri,state,228648,190555
-24,1891,dollars,MT,38323,Montana,state,42956,4633
-25,2028,dollars,NE,44811,Nebraska,state,74320,29509
-26,2031,dollars,NV,39013,Nevada,state,106364,67351
-27,2168,dollars,NH,50069,New Hampshire,state,65151,15082
-28,2171,dollars,NJ,52799,New Jersey,state,438030,385231
-29,2308,dollars,NM,34954,New Mexico,state,74290,39336
-30,2311,dollars,NY,49251,New York,state,926168,876917
-31,2448,dollars,NC,37379,North Carolina,state,342753,305374
-32,2451,dollars,ND,49565,North Dakota,state,36552,-13013
-33,2588,dollars,OH,39637,Ohio,state,434951,395314
-34,2591,dollars,OK,38620,Oklahoma,state,129390,90770
-35,2728,dollars,OR,39506,Oregon,state,162684,123178
-36,2731,dollars,PA,44686,Pennsylvania,state,522697,478011
-37,2868,dollars,RI,44614,Rhode Island,state,44850,236
-38,2871,dollars,SC,35526,South Carolina,state,165036,129510
-39,3008,dollars,SD,43613,South Dakota,state,34164,-9449
-40,3011,dollars,TN,39638,Tennessee,state,227596,187958
 41,3148,dollars,TX,41543,Texas,state,1018027,976484
-42,3151,dollars,UT,36417,Utah,state,107142,70725
-43,3288,dollars,VT,44898,Vermont,state,29761,-15137
+30,2311,dollars,NY,49251,New York,state,926168,876917
+8,768,dollars,FL,40767,Florida,state,796537,755770
+11,1048,dollars,IL,45051,Illinois,state,534750,489699
+36,2731,dollars,PA,44686,Pennsylvania,state,522697,478011
+33,2588,dollars,OH,39637,Ohio,state,434951,395314
+28,2171,dollars,NJ,52799,New Jersey,state,438030,385231
+20,1611,dollars,MI,39170,Michigan,state,390497,351327
+9,771,dollars,GA,37375,Georgia,state,357332,319957
+31,2448,dollars,NC,37379,North Carolina,state,342753,305374
 44,3291,dollars,VA,46177,Virginia,state,350198,304021
+19,1608,dollars,MA,54095,Massachusetts,state,354085,299990
 45,3428,dollars,WA,48678,Washington,state,312817,264139
-46,3431,dollars,WV,33132,West Virginia,state,63022,29890
+18,1471,dollars,MD,50131,Maryland,state,269223,219092
+1,211,dollars,AZ,36426,Arizona,state,239680,203254
+21,1748,dollars,MN,44704,Minnesota,state,242489,197785
+12,1051,dollars,IN,38614,Indiana,state,236353,197739
+4,488,dollars,CO,45503,Colorado,state,236296,190793
+23,1888,dollars,MO,38093,Missouri,state,228648,190555
+40,3011,dollars,TN,39638,Tennessee,state,227596,187958
 47,3568,dollars,WI,41302,Wisconsin,state,224143,182841
+38,2871,dollars,SC,35526,South Carolina,state,165036,129510
+35,2728,dollars,OR,39506,Oregon,state,162684,123178
+16,1331,dollars,LA,38461,Louisiana,state,160025,121564
+0,71,dollars,AL,35174,Alabama,state,152397,117223
+5,491,dollars,CT,58282,Connecticut,state,173447,115165
+15,1328,dollars,KY,34708,Kentucky,state,147697,112989
+34,2591,dollars,OK,38620,Oklahoma,state,129390,90770
+13,1188,dollars,IA,41102,Iowa,state,115999,74897
+42,3151,dollars,UT,36417,Utah,state,107142,70725
+26,2031,dollars,NV,39013,Nevada,state,106364,67351
+14,1191,dollars,KS,42372,Kansas,state,104615,62243
+22,1751,dollars,MS,32567,Mississippi,state,90261,57694
+2,348,dollars,AR,35847,Arkansas,state,92984,57137
+29,2308,dollars,NM,34954,New Mexico,state,74290,39336
+46,3431,dollars,WV,33132,West Virginia,state,63022,29890
+25,2028,dollars,NE,44811,Nebraska,state,74320,29509
+10,911,dollars,ID,35555,Idaho,state,56642,21087
+17,1468,dollars,ME,39482,Maine,state,57281,17799
+27,2168,dollars,NH,50069,New Hampshire,state,65151,15082
+24,1891,dollars,MT,38323,Montana,state,42956,4633
+37,2868,dollars,RI,44614,Rhode Island,state,44850,236
+6,628,dollars,DE,42470,Delaware,state,40813,-1657
+39,3008,dollars,SD,43613,South Dakota,state,34164,-9449
+32,2451,dollars,ND,49565,North Dakota,state,36552,-13013
+43,3288,dollars,VT,44898,Vermont,state,29761,-15137
+7,631,dollars,DC,64273,District of Columbia,state,38720,-25553
 48,3571,dollars,WY,49595,Wyoming,state,23611,-25984
+1,208,dollars,AK,50772,Alaska,state,36758,-14014
+11,908,dollars,HA,44923,Hawaii,state,64460,19537
