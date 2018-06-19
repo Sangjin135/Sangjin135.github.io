@@ -26,10 +26,11 @@ var data = [{
     locationmode: 'USA-states',
     locations: unpack(rows, 'Code'),
     z: unpack(rows, 'difference'),
-    text: unpack(rows, 'state'),
+    text: unpack(rows, 'GeoName'),
     zmin: -50000,
     zmax: 1750000,
     colorscale: 'RdBu',
+    hoverinfo: "location+z+text",
   colorbar: {
     title: 'USD',
     thickness: 0.2
@@ -53,8 +54,10 @@ geo:{
 }
 };
 Plotly.plot(myDiv, data, layout, {showLink: false});
-myPlot.on("plotly_click",function(){
-        alert(Code);})
+myPlot.on("plotly_click", d => {
+  var pt = (d.points || [])[0]
+  alert(pt.location)
+  })
 });
 </script>
 </body>
