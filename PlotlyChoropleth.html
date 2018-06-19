@@ -54,7 +54,7 @@ var data = [{
     type: 'choropleth',
     locationmode: 'USA-states',
     locations: unpack(rows, 'Code'),
-    z: unpack(rows, 'difference'),
+    z: unpack(rows, '2016PCE'),
     text: unpack(rows, 'GeoName'),
     zmin: -50000,
     zmax: 1750000,
