@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2016 Average Personal Savings Rate</title>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+</head>
+<body>
+<!-- Plotly chart will be drawn inside this DIV -->
+<div id="myDiv"></div>
+<script>
+ var myPlot = document.getElementById("myDiv");
+ Plotly.d3.csv('https://raw.githubusercontent.com/Sangjin135/Sangjin135.github.io/Lily/linechartdata.csv', function(err, row){
+    function unpack(row, key) {
+    return row.map(function(row) { return row[key]; });
+    }
+    var data2= [{
+      type: 'line',
+      x: unpack(row, 'Year'),
+      y: unpack(row, 'SavingsRate'),
+      transforms: [{
+        type: 'filter',
+        target: unpack(row, 'Code'),
+        operation: '=', value: 'AK'
+      }]
+    }];
+    
+    var layout = {
+        title: 'AK'
+    }
+    Plotly.plot('myDiv', data2, layout);
+});
+</script>
+</body>
+</html>
