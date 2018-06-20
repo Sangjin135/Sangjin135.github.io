@@ -56,13 +56,13 @@ var data = [{
     locations: unpack(rows, 'Code'),
     z: unpack(rows, '2016PCE'),
     text: unpack(rows, 'GeoName'),
-    zmin: -50000,
-    zmax: 1750000,
-    colorscale: 'Blues',
+    zmin: -10000,
+    zmax: 1700000,
+    colorscale: 'Hot',
     hoverinfo: "location+z+text",
   colorbar: {
     title: 'USD',
-    thickness: 0.2
+    thickness: 20
   },
   marker: {
     line:{
@@ -75,7 +75,7 @@ var data = [{
 console.log(data.locations);
 
 var layout = {
-title: '2016 Personal Consumption Rate in the United States (In Millions)',
+title: '2016 Personal Consumption Expenditure in the United States (In Millions)',
 geo:{
   scope: 'usa',
   showlakes: true,
