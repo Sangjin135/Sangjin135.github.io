@@ -55,8 +55,10 @@ geo:{
 Plotly.plot(myDiv, data, layout, {showLink: false});
 myPlot.on("plotly_click", d => {
   var pt = (d.points || [])[0]
-  $("body").load("/pce/"+pt.text);
-})
+  window.open(
+    '127.0.0.1:5000/PCE/' + pt.text,
+    '_blank' // <- This is what makes it open in a new window.
+  );})
 
 })
 </script>
