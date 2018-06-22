@@ -12,38 +12,8 @@
 
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-7">
       <div id="myDiv"></div>
-    </div>
-    <div class="col-md-5">
-      <div id="myDiv2"></div>
-    </div>
-  </div>
-</div>
-
 <script>
-Plotly.d3.csv('https://raw.githubusercontent.com/Sangjin135/Sangjin135.github.io/Lily/linechartdata.csv', function(err, row){
-    function unpack(row, key) {
-    return row.map(function(row) { return row[key]; });
-    }
-    var data2= [{
-      type: 'line',
-      x: unpack(row, 'Year'),
-      y: unpack(row, 'SavingsRate'),
-      transforms: [{
-        type: 'filter',
-        target: unpack(row, 'Code'),
-        operation: '=', value: "USA"
-      }]
-    }];
-    
-    var layout = {
-        title: "United States"
-    }
-    Plotly.newPlot('myDiv2', data2, layout);
-});
  var myPlot = document.getElementById("myDiv");
 Plotly.d3.csv('https://raw.githubusercontent.com/Sangjin135/Sangjin135.github.io/Lily/data.csv', function(err, rows){
 function unpack(rows, key) {
@@ -85,26 +55,7 @@ geo:{
 Plotly.plot(myDiv, data, layout, {showLink: false});
 myPlot.on("plotly_click", d => {
   var pt = (d.points || [])[0]
-  Plotly.d3.csv('https://raw.githubusercontent.com/Sangjin135/Sangjin135.github.io/Lily/linechartdata.csv', function(err, row){
-    function unpack(row, key) {
-    return row.map(function(row) { return row[key]; });
-    }
-    var data2= [{
-      type: 'line',
-      x: unpack(row, 'Year'),
-      y: unpack(row, 'SavingsRate'),
-      transforms: [{
-        type: 'filter',
-        target: unpack(row, 'Code'),
-        operation: '=', value: pt.location
-      }]
-    }];
-    
-    var layout = {
-        title: pt.text
-    }
-    Plotly.newPlot('myDiv2', data2, layout);
-});
+  $("body").load("/pce/"+pt.text);
 })
 
 })
